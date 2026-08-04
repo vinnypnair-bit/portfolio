@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // TYPEWRITER EFFECT
     // ==========================================================================
     const typeTextEl = document.getElementById('type-text');
-    const words = ["Embedded Systems", "Robotics Prototypes", "Control Engineering", "Hardware Design"];
+    const words = ["Embedded Systems", "Self-Balancing Robots", "MATLAB & Simulink", "Electrical Design"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
