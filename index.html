@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinayak Nair | MEng Electrical & Electronic Engineering Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Vinayak Nair, MEng Electrical & Electronic Engineering student at the University of Warwick. Former ARM & Barclays intern. Award-winning electronic system designer.">
+    <meta name="keywords" content="Vinayak Nair, Electrical Engineering, Electronic Engineering, Warwick University, ARM, Embedded Systems, Robotics, Control Systems, Portolio">
+    <meta name="author" content="Vinayak Nair">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vinayak Nair | MEng Electrical & Electronic Engineering Portfolio">
+    <meta property="og:description" content="Explore the projects, work experience, and achievements of Vinayak Nair, an Electrical & Electronic Engineering student at the University of Warwick.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Vinayak Nair | MEng Electrical & Electronic Engineering Portfolio">
+    <meta property="twitter:description" content="Explore the projects, work experience, and achievements of Vinayak Nair, an Electrical & Electronic Engineering student at the University of Warwick.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Elements -->
+    <div class="background-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="site-header">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="logo-link">
+                <span class="logo-accent">&lt;</span>VN<span class="logo-accent">.eng /&gt;</span>
+            </a>
+            <button class="nav-toggle" id="nav-menu-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-navigation">
+                <a href="#about" class="nav-link active" id="nav-link-about">About</a>
+                <a href="#experience" class="nav-link" id="nav-link-experience">Experience</a>
+                <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+                <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+                <a href="#contact" class="nav-link contact-btn" id="nav-link-contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-tagline-wrapper">
+                        <span class="hero-tagline-status">System Active</span>
+                        <span class="hero-tagline-dot"></span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Vinayak Nair</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Designing the future of <span class="typing-text" id="type-text">Embedded Systems</span>
+                    </h2>
+                    <p class="hero-description">
+                        Engineering undergraduate at the <strong>University of Warwick</strong> specializing in Electrical & Electronic Engineering. Driven by building smart hardware, optimizing embedded control logic, and solving complex electronic problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary" id="btn-view-work">View Projects</a>
+                        <a href="CV_Vinayak_Nair.pdf" target="_blank" class="btn btn-secondary" id="btn-download-cv">
+                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            View CV (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="circuit-container">
+                        <svg class="circuit-svg" id="hero-circuit-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Circuit Schematic Aesthetic Elements -->
+                            <rect x="120" y="120" width="160" height="160" rx="20" fill="none" stroke="var(--cyan-glow)" stroke-width="2" stroke-dasharray="4 4" class="pulse-rect" />
+                            <rect x="140" y="140" width="120" height="120" rx="10" fill="var(--slate-800)" stroke="var(--emerald)" stroke-width="3" />
+                            <!-- Central Chip Design -->
+                            <text x="200" y="208" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" fill="var(--white)" letter-spacing="1">ARM</text>
+                            
+                            <!-- Signals / Paths -->
+                            <path d="M200 40 L200 140" stroke="var(--cyan)" stroke-width="2" fill="none" />
+                            <path d="M200 260 L200 360" stroke="var(--cyan)" stroke-width="2" fill="none" />
+                            <path d="M40 200 L140 200" stroke="var(--cyan)" stroke-width="2" fill="none" />
+                            <path d="M260 200 L360 200" stroke="var(--cyan)" stroke-width="2" fill="none" />
+                            
+                            <!-- Diagonal branched traces -->
+                            <path d="M100 100 L160 160" stroke="var(--emerald)" stroke-dasharray="2 2" stroke-width="1.5" fill="none" />
+                            <path d="M300 100 L240 160" stroke="var(--emerald)" stroke-dasharray="2 2" stroke-width="1.5" fill="none" />
+                            <path d="M100 300 L160 240" stroke="var(--emerald)" stroke-dasharray="2 2" stroke-width="1.5" fill="none" />
+                            <path d="M300 300 L240 240" stroke="var(--emerald)" stroke-dasharray="2 2" stroke-width="1.5" fill="none" />
+                            
+                            <!-- Nodes / Terminals -->
+                            <circle cx="200" cy="40" r="5" fill="var(--cyan-glow)" class="node-glow" />
+                            <circle cx="200" cy="360" r="5" fill="var(--cyan-glow)" class="node-glow" />
+                            <circle cx="40" cy="200" r="5" fill="var(--cyan-glow)" class="node-glow" />
+                            <circle cx="360" cy="200" r="5" fill="var(--cyan-glow)" class="node-glow" />
+                            
+                            <circle cx="100" cy="100" r="4" fill="var(--emerald-glow)" />
+                            <circle cx="300" cy="100" r="4" fill="var(--emerald-glow)" />
+                            <circle cx="100" cy="300" r="4" fill="var(--emerald-glow)" />
+                            <circle cx="300" cy="300" r="4" fill="var(--emerald-glow)" />
+                            
+                            <!-- Signal Pulse Simulation -->
+                            <circle cx="200" cy="40" r="4" fill="var(--emerald)" class="signal-dot signal-y-down" />
+                            <circle cx="200" cy="360" r="4" fill="var(--emerald)" class="signal-dot signal-y-up" />
+                            <circle cx="40" cy="200" r="4" fill="var(--cyan)" class="signal-dot signal-x-right" />
+                            <circle cx="360" cy="200" r="4" fill="var(--cyan)" class="signal-dot signal-x-left" />
+                        </svg>
+                        <div class="circuit-glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="arrow-down"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. BACKGROUND</span>
+                    <h2 class="section-title">Education &amp; Academic Background</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="education-grid">
+                    <!-- Warwick Card -->
+                    <div class="edu-card featured-edu">
+                        <div class="edu-header">
+                            <div class="edu-logo-fallback">UW</div>
+                            <div class="edu-title-group">
+                                <h3>University of Warwick</h3>
+                                <p class="edu-subtitle">MEng Electrical and Electronic Engineering</p>
+                            </div>
+                            <span class="edu-date">2025 - 2029 (Expected)</span>
+                        </div>
+                        <div class="edu-body">
+                            <div class="grade-badge">
+                                <span class="grade-label">Current Academic Standing</span>
+                                <span class="grade-value">83% (First Class Honours)</span>
+                            </div>
+                            <p class="edu-desc">
+                                Pursuing an integrated master's degree focusing on hardware engineering, control principles, signals analysis, and advanced circuitry design. Engaging deeply in both theoretical logic and practical lab implementations.
+                            </p>
+                            <ul class="edu-details-list">
+                                <li>
+                                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Focus areas: Control systems fundamentals, signals and systems, and electronic circuit design.
+                                </li>
+                                <li>
+                                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Developing a solid foundation in digital logic, microprocessors, and high-frequency communication concepts.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- School Card -->
+                    <div class="edu-card">
+                        <div class="edu-header">
+                            <div class="edu-logo-fallback">CC</div>
+                            <div class="edu-title-group">
+                                <h3>Christ's College Finchley</h3>
+                                <p class="edu-subtitle">Sixth Form Education</p>
+                            </div>
+                            <span class="edu-date">2018 - 2025</span>
+                        </div>
+                        <div class="edu-body">
+                            <div class="qualification-group">
+                                <h4>A-Levels</h4>
+                                <div class="badge-grid">
+                                    <span class="badge">Mathematics: A</span>
+                                    <span class="badge">Further Mathematics: A</span>
+                                    <span class="badge">Physics: A</span>
+                                    <span class="badge">EPQ: A*</span>
+                                </div>
+                            </div>
+                            <div class="qualification-group">
+                                <h4>GCSEs</h4>
+                                <p class="qualification-text">Nine Grade 9s and one Grade 8 (including Mathematics and Physics).</p>
+                            </div>
+                            <div class="qualification-group">
+                                <h4>Leadership &amp; Team Activities</h4>
+                                <p class="qualification-text">School Prefect &amp; Football First Team player.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. WORK EXPERIENCE</span>
+                    <h2 class="section-title">Industry Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- ARM Card -->
+                    <div class="exp-card animate-on-scroll">
+                        <div class="exp-glow"></div>
+                        <div class="exp-header">
+                            <div class="exp-badge">Primary Highlight</div>
+                            <div class="exp-company-logo">ARM</div>
+                            <div class="exp-meta">
+                                <h3 class="exp-role">Electronics Work Experience</h3>
+                                <p class="exp-company">ARM &bull; Cambridge, UK</p>
+                            </div>
+                            <span class="exp-timeline-date">June 2024</span>
+                        </div>
+                        <div class="exp-body">
+                            <p class="exp-summary">
+                                Pre-University technical work experience placement, working alongside senior silicon design and systems engineers to develop hardware prototypes and model embedded software behavior.
+                            </p>
+                            <ul class="exp-list">
+                                <li>
+                                    <span class="list-bullet"></span>
+                                    <div><strong>Embedded Control Logic:</strong> Designed and implemented embedded control systems using event-driven logic and programming concepts in MakeCode.</div>
+                                </li>
+                                <li>
+                                    <span class="list-bullet"></span>
+                                    <div><strong>Programming Constructs:</strong> Structuring loops, asynchronous timers, and branching conditional flows to regulate complex sensor monitoring tasks.</div>
+                                </li>
+                                <li>
+                                    <span class="list-bullet"></span>
+                                    <div><strong>Satellite Hardware Simulation:</strong> Designed, soldered, and wired a functional hardware prototype simulating satellite-specific telemetry feedback systems.</div>
+                                </li>
+                                <li>
+                                    <span class="list-bullet"></span>
+                                    <div><strong>Design Presentation:</strong> Demonstrated and presented the architecture diagrams and live device behavior to a panel of engineering mentors.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Barclays Card -->
+                    <div class="exp-card animate-on-scroll">
+                        <div class="exp-glow exp-glow-alt"></div>
+                        <div class="exp-header">
+                            <div class="exp-company-logo logo-barclays">Barclays</div>
+                            <div class="exp-meta">
+                                <h3 class="exp-role">Technology Work Experience</h3>
+                                <p class="exp-company">Barclays &bull; London, UK</p>
+                            </div>
+                            <span class="exp-timeline-date">June 2024</span>
+                        </div>
+                        <div class="exp-body">
+                            <p class="exp-summary">
+                                Pre-university technology placement shadowed software and technical groups inside consumer and enterprise engineering teams.
+                            </p>
+                            <ul class="exp-list">
+                                <li>
+                                    <span class="list-bullet"></span>
+                                    <div><strong>Software Pipelines:</strong> Shadowed tech teams to understand large-scale DevOps cycles, database interactions, and secure software development environments.</div>
+                                </li>
+                                <li>
+                                    <span class="list-bullet"></span>
+                                    <div><strong>Product Performance Analysis:</strong> Observed and mapped workflows demonstrating how server telemetry and data aggregation are leveraged to optimize user experience and product uptime.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. PROJECTS</span>
+                    <h2 class="section-title">Selected Projects &amp; Awards</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="project-showcase">
+                    <div class="project-media">
+                        <!-- Custom Vector Graphic for Remote Car Project -->
+                        <div class="project-graphic-box">
+                            <svg class="schematic-svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="30" y="30" width="240" height="140" rx="10" fill="none" stroke="var(--emerald)" stroke-width="1.5" stroke-dasharray="5 5" />
+                                <!-- Car outline sketch -->
+                                <rect x="90" y="60" width="120" height="80" rx="15" fill="var(--slate-800)" stroke="var(--cyan)" stroke-width="3" />
+                                <!-- Wheels -->
+                                <circle cx="80" cy="70" r="16" fill="var(--slate-900)" stroke="var(--emerald)" stroke-width="2" />
+                                <circle cx="220" cy="70" r="16" fill="var(--slate-900)" stroke="var(--emerald)" stroke-width="2" />
+                                <circle cx="80" cy="130" r="16" fill="var(--slate-900)" stroke="var(--emerald)" stroke-width="2" />
+                                <circle cx="220" cy="130" r="16" fill="var(--slate-900)" stroke="var(--emerald)" stroke-width="2" />
+                                <!-- Circuit connection lines -->
+                                <line x1="150" y1="40" x2="150" y2="100" stroke="var(--cyan-glow)" stroke-width="2" />
+                                <line x1="150" y1="100" x2="200" y2="100" stroke="var(--cyan-glow)" stroke-width="2" />
+                                <circle cx="150" cy="100" r="6" fill="var(--emerald-glow)" />
+                                <text x="150" y="165" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" fill="var(--slate-400)">SCHEMATIC VER 1.04</text>
+                            </svg>
+                            <span class="award-ribbon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6a4 4 0 0 0-4 4h2a2 2 0 1 1 2 2v2a4 4 0 0 0 0-8z"/></svg>
+                                Mark-Evison Gold Award Winner
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-badge">Electronics &amp; Embedded Systems</div>
+                        <h3 class="project-title">Remote Controlled Car Design</h3>
+                        <p class="project-location-date">London, UK &bull; Oct 2024</p>
+                        
+                        <p class="project-description">
+                            A comprehensive electronic design and prototyping project focused on constructing a custom remote-controlled electronic chassis, featuring optimized motor driver circuits, smart battery integration, and reliable power distribution paths.
+                        </p>
+                        
+                        <ul class="project-milestones">
+                            <li>
+                                <strong>Secured Project Funding:</strong> Successfully pitched the design proposal and schematic architecture to secure financial backing and hardware sponsorships.
+                            </li>
+                            <li>
+                                <strong>Hardware Circuit Integration:</strong> Designed the complete logic layout, routing inputs from receiving antennas to PWM motor speed controllers, ensuring correct voltage regulation.
+                            </li>
+                            <li>
+                                <strong>Mark-Evison Gold Award:</strong> Honoured with the prestigious Gold Award for demonstrating outstanding engineering design, system reliability, and technical innovation.
+                            </li>
+                        </ul>
+
+                        <div class="project-tech-tags">
+                            <span>Circuit Design</span>
+                            <span>PWM Controls</span>
+                            <span>Power Systems</span>
+                            <span>Hardware Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Achievements Section -->
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. SPECIFICATIONS</span>
+                    <h2 class="section-title">Technical Expertise &amp; Credentials</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-layout">
+                    <!-- Interactive Tab Selector -->
+                    <div class="skills-sidebar">
+                        <button class="skill-tab-btn active" id="tab-btn-programming" data-target="skill-content-programming">
+                            <span class="tab-number">01 //</span> Programming &amp; Tools
+                        </button>
+                        <button class="skill-tab-btn" id="tab-btn-embedded" data-target="skill-content-embedded">
+                            <span class="tab-number">02 //</span> Embedded Systems
+                        </button>
+                        <button class="skill-tab-btn" id="tab-btn-knowledge" data-target="skill-content-knowledge">
+                            <span class="tab-number">03 //</span> Engineering Core
+                        </button>
+                        <button class="skill-tab-btn" id="tab-btn-achievements" data-target="skill-content-achievements">
+                            <span class="tab-number">04 //</span> Achievements
+                        </button>
+                    </div>
+
+                    <!-- Skills Detail Body -->
+                    <div class="skills-content-box">
+                        <!-- Tab 1: Programming & Tools -->
+                        <div class="skill-tab-content active" id="skill-content-programming">
+                            <h3 class="skill-title">Software, Logic &amp; Coding Tools</h3>
+                            <p class="skill-intro">Leveraging programming languages and scripting tools to simulate systems, analyze experimental sensor logs, and build firmware controls.</p>
+                            
+                            <div class="skill-bars-container">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Python (Simulations, Scripts)</span>
+                                        <span>Intermediate</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>MATLAB (Signal Processing &amp; Control Math)</span>
+                                        <span>Intermediate</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>MakeCode (Asynchronous Block / Logic)</span>
+                                        <span>Advanced</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Microsoft Excel (Data Modelling, Lab Analysis)</span>
+                                        <span>Advanced</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Embedded Systems & Electronics -->
+                        <div class="skill-tab-content" id="skill-content-embedded">
+                            <h3 class="skill-title">Embedded Systems &amp; Hardware Layout</h3>
+                            <p class="skill-intro">Familiar with hardware assembly pipelines, analog signal pathways, logic timing diagrams, and electronic components integration.</p>
+                            
+                            <div class="specs-grid">
+                                <div class="spec-card">
+                                    <div class="spec-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                    </div>
+                                    <h5>Circuitry Layout</h5>
+                                    <p>Schematic mapping, copper trace routing planning, component placement constraints, and power bus isolation.</p>
+                                </div>
+                                <div class="spec-card">
+                                    <div class="spec-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                                    </div>
+                                    <h5>Logic &amp; Controls</h5>
+                                    <p>Configuring state machines, loops, sensor timing loops, edge triggers, and sensor signal interpretation modules.</p>
+                                </div>
+                                <div class="spec-card">
+                                    <div class="spec-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                                    </div>
+                                    <h5>Prototyping</h5>
+                                    <p>Physical circuit layout fabrication, prototype wiring, basic iron soldering, breadboard testing, and logic analyzer checking.</p>
+                                </div>
+                                <div class="spec-card">
+                                    <div class="spec-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                                    </div>
+                                    <h5>Power Regulators</h5>
+                                    <p>Integrating battery cells, balancing step-down regulators, designing thermal heatsinks, and optimizing current distribution.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: Engineering Knowledge -->
+                        <div class="skill-tab-content" id="skill-content-knowledge">
+                            <h3 class="skill-title">Core Engineering Foundations</h3>
+                            <p class="skill-intro">Academic frameworks, systems logic, and engineering fundamentals studied and implemented throughout coursework at the University of Warwick.</p>
+                            
+                            <ul class="know-list">
+                                <li>
+                                    <div class="list-marker">// Signals &amp; Systems</div>
+                                    <p>Frequency domain transformations, system frequency response, filters, analog-to-digital signal processing thresholds, and mathematical operations.</p>
+                                </li>
+                                <li>
+                                    <div class="list-marker">// Control Systems</div>
+                                    <p>Proportional-Integral-Derivative (PID) loop feedback, transient system response profiling, overshoot damping, and steady-state error minimizations.</p>
+                                </li>
+                                <li>
+                                    <div class="list-marker">// Electronic Design</div>
+                                    <p>Op-amp circuitry layout, transistor signal biasing, impedance matching, power amplifier designs, and digital-to-analog converter logic pathways.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tab 4: Achievements & Interests -->
+                        <div class="skill-tab-content" id="skill-content-achievements">
+                            <h3 class="skill-title">Achievements, Awards &amp; Interests</h3>
+                            
+                            <div class="achieve-timeline">
+                                <div class="achieve-row">
+                                    <span class="achieve-year">Oct 2024</span>
+                                    <div class="achieve-info">
+                                        <h4>Mark-Evison Gold Award</h4>
+                                        <p>Honoured for outstanding electronic system innovation, secure team funding presentation, and remote controlled motor chassis fabrication.</p>
+                                    </div>
+                                </div>
+                                <div class="achieve-row">
+                                    <span class="achieve-year">High School</span>
+                                    <div class="achieve-info">
+                                        <h4>Senior Maths Challenge Gold Award</h4>
+                                        <p>Two-time recipient of the UKMT Gold Award for advanced analytical logic, problem-solving, and rapid mathematical reasoning.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="interests-grid">
+                                <h4>Personal &amp; Academic Interests</h4>
+                                <div class="interests-tags">
+                                    <span>Embedded Architecture</span>
+                                    <span>Signal Pathways Design</span>
+                                    <span>Control Loop Optimization</span>
+                                    <span>Hardware Hacking</span>
+                                    <span>Football / Team Athletics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-header">
+                        <span class="contact-tag">05. HANDSHAKE</span>
+                        <h2 class="contact-title">Let's Connect &amp; Collaborate</h2>
+                        <p class="contact-subtitle">Always open to discussing internships, electronic design projects, embedded software development, or football.</p>
+                    </div>
+
+                    <div class="contact-info-grid">
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <h4>Email Address</h4>
+                            <a href="mailto:vinnypnair@gmail.com" class="contact-link" id="email-link">vinnypnair@gmail.com</a>
+                            <button class="copy-email-btn" id="btn-copy-email" data-email="vinnypnair@gmail.com">
+                                <span class="btn-text">Copy Email Address</span>
+                                <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            </button>
+                            <span class="copy-feedback-msg" id="email-feedback">Copied to clipboard!</span>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <h4>LinkedIn Profile</h4>
+                            <a href="https://www.linkedin.com/in/vinayak-nair-44401731b/" target="_blank" rel="noopener noreferrer" class="contact-link" id="linkedin-link">vinayak-nair-44401731b</a>
+                            <span class="card-hint">Check out educational history &amp; contacts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copy">&copy; 2026 Vinayak Nair. All rights reserved.</p>
+            <div class="footer-right">
+                <span class="footer-status">Warwick University &bull; EEE MEng</span>
+                <span class="status-indicator"></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
